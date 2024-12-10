@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Speed Setter",
+    "version": "1.0",
+    "description": "Automatically sets YouTube video speed to 1.5x",
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+    "host_permissions": [
+      "*://*.youtube.com/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
